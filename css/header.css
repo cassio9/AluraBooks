@@ -101,6 +101,7 @@
   }
 
   .alura-logo-1024 {
+    display: block;
     color: black;
     font-weight: 400;
     font-size: 30px;

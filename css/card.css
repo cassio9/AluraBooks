@@ -12,7 +12,7 @@
   max-width: 588px;
   left: 46%;                        
   transform: translate(-50%, 0);
-  
+  min-width: 300px; 
 }
 
 
@@ -98,6 +98,31 @@
 .autora-h2{
   margin-top: 10px;
   width: 100px;
+}
+@media (max-width: 400px) {
+  .angular-logo {
+    max-width: 130px;
+    min-height: 175px;
+    width: 100%;
+  }
+
+  .card {
+    left: 45%;
+  }
+
+  .card-left h2{
+    min-width: 160px;
+  }
+
+  .card-btn {
+    min-width: 120px;
+  }
+  .escritora-foto {
+    max-width: 132px;
+    min-height: 199px;
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 520px) {
