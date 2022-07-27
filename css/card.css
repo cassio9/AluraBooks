@@ -1,0 +1,127 @@
+.card {
+  display: flex;
+  margin: 20px 18px;
+  background-color: var(--background-white);
+  padding: 1em 1.2em;
+  height: 285px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 588px;
+  left: 46%;                        
+  transform: translate(-50%, 0);
+  
+}
+
+
+.card-left {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 3px 16px 26px;
+  height: 100%;
+}
+
+.card-left h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--color-orange);
+  text-align: left;
+  min-width: 179px;
+}
+
+.card-left h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: var(--almost-dark);
+  text-align: left;
+}
+
+.card-left p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--almost-dark);
+  text-align: left;
+  margin-right: 30px
+}
+
+.logo1 {
+    margin: 0 10px;
+}
+
+.card-right {
+  display: flex;
+  flex-flow: row wrap;
+  height: 90%;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  min-width: 160px;
+}
+
+.angular-logo {
+  max-width: 170px;
+  min-height: 170px;
+  width: 90%;
+}
+
+.card-btn {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--background-orange);
+  color: var(--color-white);
+  min-width: 90%;
+  border: none;
+  height: 48px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+
+.escritora-foto {
+  max-width: 170px;
+  min-height: 190px;
+  width: 90%;
+}
+
+.estrelas {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.autora-h2{
+  margin-top: 10px;
+  width: 100px;
+}
+
+@media (min-width: 520px) {
+  .autora-h2{
+    margin-top: 35px;
+    margin-left: -90px;
+    width: 200px;
+  }  
+  
+  .card-right {
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 1420px) {
+  .card{
+      left: 0%;
+      transform: translate(0%, 5%);
+      height: 265px;
+  }
+
+  .autora-h2{
+    margin-top: 35px;
+    margin-left: -90px;
+    width: 300px;
+  }  
+}

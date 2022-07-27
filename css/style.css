@@ -1,0 +1,52 @@
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./carrossel.css);
+@import url(./card.css);
+@import url(./topico.css);
+@import url(./email.css);
+@import url(./footer.css);
+
+:root {
+  --main-font-family: "Poppins", sans-serif;
+  --background-white: #fff;
+  --background-gray: #e5e5e5;
+  --background-orange: #eb9b00;
+  --background-section: linear-gradient(
+    97.54deg,
+    #002f52 35.49%,
+    #326589 165.37%
+  );
+  --color-white: white;
+  --color-orange: #eb9b00;
+  --almost-dark: #002f52;
+  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --cinza: gray;
+  --cinza-claro: rgb(190, 190, 190);
+}
+
+body {
+  font-family: var(--main-font-family);
+  background-color: var(--background-gray);
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+
+p {
+  color: var(--color-white);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

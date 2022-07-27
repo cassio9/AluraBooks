@@ -1,0 +1,145 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background-color: white;
+  position: relative;
+}
+
+.menu-hamburger {
+  background-image: url(../img/Menu.svg);
+  display: inline-block;
+  width: 36px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+
+.container__botao {
+  display: none;
+}
+
+.container__botao:checked ~ .lista-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 80px;
+  background-color: var(--background-white);
+  left: 0;
+  height: 344px;
+  width: 300px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.lista-menu-titulo {
+  color: var(--color-orange);
+  font-size: 16px;
+  line-height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 0 1.4em;
+}
+
+.lista-menu-link {
+  box-sizing: border-box;
+  padding: 1.2em 1.4em;
+  height: 64px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.lista-menu-item {
+  width: 150px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #1A4367;
+}
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .fav {
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  .nav-left {
+    align-items: flex-end;
+  }
+
+  .alura-logo-1024 {
+    color: black;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: -15px;
+  }
+
+  .alura-logo-1024 span {
+    font-weight: 700;
+  }
+
+  .none {
+    display: block;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .new-features {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content: space-around;
+  }
+
+  .lista-menu-titulo {
+    display: none;
+  }
+
+  .container__botao:checked ~ .lista-menu {
+    top: 77px;
+    left: 320px;
+    height: 344px;
+    width: 300px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .lista-menu-link:hover {
+    background: var(--background-section);
+  }
+
+  .lista-menu-link:hover > .lista-menu-item {
+    -webkit-text-fill-color: white;
+  }
+
+}

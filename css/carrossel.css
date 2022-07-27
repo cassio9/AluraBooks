@@ -1,0 +1,71 @@
+
+.titulo-carrossel {
+    color: var(--color-orange);
+    padding: 1em 0 0.5em 0;
+    background-color: var(--background-white);
+}
+
+.carrossel-tema {
+    background-color: var(--background-gray);
+}
+
+
+
+.swiper-slide img {
+    width: 100%;
+    min-height: 240px;
+    position: relative;
+    left: -120px;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.swiper-button-prev ,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.swiper {
+    max-width: 700px;
+}
+
+@media (min-width: 730px) {
+    .swiper-button-prev , 
+    .swiper-button-next {
+        display: flex;
+        background: var(--background-section);
+        border-radius: 24px;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+        margin: 0px -10px;
+    }
+
+    .swiper-button-prev::after , 
+    .swiper-button-next::after {
+       font-size: 13px;
+       position: absolute;
+       color: var(--color-white);  
+    }
+
+    .swiper {
+        padding: 30px;
+    }
+
+    .swiper-slide img {
+        left: 0;
+        filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.0));
+    }
+}
+
+@media (min-width: 1420px) {
+    .carrossel-card-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,72 @@
+
+
+.email-contato {
+  background-color: var(--background-white);
+  padding: 24px;
+}
+
+
+.email-contato h3 {
+  text-decoration: none;
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 24px;
+  text-align: start;
+}
+
+.email-contato p {
+  text-decoration: none;
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 24px;
+  max-width: 350px;
+  text-align: start;
+}
+
+.email-box {
+  justify-content: center;
+  border: 1px solid rgb(27, 27, 68);
+  border-radius: 24px;
+  min-width: 280px;
+  height: 30px;
+  background-color: transparent;
+  text-decoration: none;
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 420px;
+  padding: 0.3em 1em;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.email-box::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background: url(../img/Email.svg) no-repeat;
+  background-position: 0px;
+  padding: 2em;
+}
+
+@media (min-width: 800px) {
+  .email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
