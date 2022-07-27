@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.alura-logo-1024 {
+  display: none;
+}
+
 .menu-hamburger {
   background-image: url(../img/Menu.svg);
   display: inline-block;
